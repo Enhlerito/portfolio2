@@ -1,0 +1,242 @@
+:root{
+  --primary color:#bc3908 ;
+  --secondary-color:#ed6600;
+  --accent-color:#cc3363;
+  --bg-color: #ed6600;
+  --shadow-color:#8c7A6B;
+  font-family: helvetica;
+  box-sizing: border-box;
+  /* SElect your own color scheme at coolors.co */
+
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+
+
+}
+
+nav {
+  background: var(--secondary-color);
+  color: var(--accent-color);
+  position: fixed;
+  width: 100%
+}
+
+nav a{
+  text-decoration: none;
+  color:inherit;
+  padding: 1em;
+  transition: background-color 0.5s;
+}
+
+nav a :first-child{
+margin-left: 10%;
+margin-right: auto;
+
+}
+
+nav a :last-child{
+  margin-right: 10%;
+}
+
+nav a :hover{
+  background: var(--accent-color);
+  color: var(--secondary-color);
+  cursor: pointer;
+
+}
+nav ul{
+  margin: 0;
+  display: flex;
+  width: 100%;
+}
+
+nav ul li{
+  list-style-type: none;
+  padding: 1em;
+}
+
+nav ul:first-child{
+  margin-left:10%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+  nav ul li:hover{
+    background: var(--accent-color);
+      color: var(--secondary-color);
+      cursor: pointer;
+    }
+/* header css*/
+
+header{
+  display: flex;
+  height: 100vh;
+  background-image: url('../images/42.jpg')
+}
+
+
+div.headerFigure{
+  margin: auto;
+  width: 200px;
+  padding: 1em;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+}
+
+header img{
+  width: 100%;
+  box-shadow: 5px 5px 3px rgba(0,0,0,0.5);
+  border-radius: 10px;
+}
+
+header div.headerFigure h2{
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+
+header div.headerFigure p{
+  text-align: center;
+  margin: 0 auto;
+}
+
+/*Quote block css  */
+blockquote{
+  margin: 3em auto;
+  text-align: left;
+  color: var(--primary-color);
+  font-size: 1.5em;
+  width: 60%
+
+}
+
+blockquote #saidby::before{
+
+}
+
+
+blockquote #saidby{
+  text-align: right;
+  font-size: 0.8em;
+}
+
+/* main portfolio css */
+main{
+
+margin: 0 auto;
+width: 80%;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+grid-gap: 30px;
+justify-content: center;
+
+}
+
+main figure{
+  margin: 0;
+  border: 1px solid var(--shadow-coolor)
+}
+
+main figure img{
+  width: 100%
+}
+
+main figure figcaption h2,
+  main figcaption p{
+    color: var(--primary-color);
+    text-align:center
+    margin: 0.5em 0 0 0;
+    padding: 0 1em;
+}
+
+main a{
+  text-decoration: none;
+
+}
+
+/*forms styling css  */
+
+#contact{
+  margin: 3em auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 3em;
+}
+
+
+
+input[type=text], select,textarea{
+  margin: 5px 0;
+  width: 100%;
+  padding: 1em;
+  border: 0 solid white;
+  background: var(--bg-color);
+  border-left: 5px solid var(--primary-color);
+  border-radius:0;
+  resize: vertical;
+}
+
+input[type=submit]{
+background-image: url(../image/p5.jpg);
+color: var(--accent-color);
+  padding: 1em;
+  margin: 5px 0;
+  border: none;
+  cursor: pointer;
+  float: right;
+  width: 100%;
+}
+
+
+input[type=submit]:hover{
+  margin-top: 5px;
+  background-color: var(--secondary-color);
+
+}
+
+/* end of form */
+
+#Contact iframe{
+  width: 100%;
+  height: 100%;
+  min-width: 280px;
+  min-height: 280px
+}
+
+footer ul{
+text-decoration: none;
+  background: var(--primary-color)
+}
+
+/*end of map  */
+/*footer  */
+
+footer{
+  background: var(--bg-color);
+  text-align:center;
+  padding: 3em 0;
+}
+
+footer ul {
+  list-style-type: none;
+
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+input, textarea, select, {
+  height:10px;
+  width : 150px;
+  margin: 0;
