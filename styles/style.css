@@ -1,9 +1,9 @@
 :root{
-  --primary color:#bc3908 ;
-  --secondary-color:#ed6600;
-  --accent-color:#cc3363;
+  --primary-color: #bc3908;
+  --secondary-color: #ed6600;
+  --accent-color: #96163e;
   --bg-color: #ed6600;
-  --shadow-color:#8c7A6B;
+  --shadow-color: #8c7A6B;
   font-family: helvetica;
   box-sizing: border-box;
   /* SElect your own color scheme at coolors.co */
@@ -25,16 +25,16 @@ nav {
   width: 100%
 }
 
-nav a{
+nav a {
   text-decoration: none;
-  color:inherit;
+  color: inherit;
   padding: 1em;
-  transition: background-color 0.5s;
+  transition: background 0.5s;
 }
 
-nav a :first-child{
-margin-left: 10%;
-margin-right: auto;
+nav a:first-child{
+ margin-left: 10%;
+ margin-right: auto;
 
 }
 
@@ -43,11 +43,11 @@ nav a :last-child{
 }
 
 nav a :hover{
-  background: var(--accent-color);
-  color: var(--secondary-color);
+  background-color: red;
+  color: blue;
   cursor: pointer;
-
 }
+
 nav ul{
   margin: 0;
   display: flex;
@@ -68,11 +68,11 @@ nav ul li a {
   color: inherit;
 }
 
-  nav ul li:hover{
-    background: var(--accent-color);
-      color: var(--secondary-color);
-      cursor: pointer;
-    }
+nav ul li:hover{
+  background: var(--accent-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+  }
 /* header css*/
 
 header{
@@ -188,12 +188,12 @@ input[type=text], select,textarea{
 input[type=submit]{
 background-image: url(../image/p5.jpg);
 color: var(--accent-color);
-  padding: 1em;
-  margin: 5px 0;
-  border: none;
-  cursor: pointer;
-  float: right;
-  width: 100%;
+padding: 1em;
+margin: 5px 0;
+border: none;
+cursor: pointer;
+float: right;
+width: 100%;
 }
 
 
@@ -214,11 +214,13 @@ input[type=submit]:hover{
 
 footer ul{
 text-decoration: none;
-  background: var(--primary-color)
+background: var(--secondary-color);
 }
 
 /*end of map  */
 /*footer  */
+
+
 
 footer{
   background: var(--bg-color);
@@ -226,17 +228,13 @@ footer{
   padding: 3em 0;
 }
 
+
 footer ul {
   list-style-type: none;
-
 }
+
 
 footer a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: black;
 }
-
-input, textarea, select, {
-  height:10px;
-  width : 150px;
-  margin: 0;
